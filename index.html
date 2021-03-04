@@ -256,7 +256,7 @@
                                 <a href="product-details.html"><img src="assets/images/product/product-01.jpg" alt="Produce Images"></a>
                                 <span class="label">-15% </span>
                                 <div class="product-action">
-                                    <a href="cart.html" class="add-to-cart"><i class="ion-bag"></i></a>
+                                    <a class="btn-ens-action" data-rel="d7fdbe83241747" class="add-to-cart"><i class="ion-bag"></i></a>
                                 </div>
                             </div>
                             <div class="product-content">
@@ -708,6 +708,21 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+	
+	<!--Библиотека jQuery-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-d7fdbe83.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-d7fdbe83.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+document.addEventListener("EasyNetShopModalOpened", function(event) {
+  if ((ens_jQuery(".easynetshop-modal-addtocart").css('display') != 'none')) { hideEasynetshopModals(); }
+}, false);
+</script>
 
 </body>
 
